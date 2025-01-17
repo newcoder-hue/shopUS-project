@@ -1,0 +1,533 @@
+:root {
+    --mainColor: #AE1C9A;
+    --bgColor: #F8F8F8;
+    --secondColor: #FFBB38;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+#header {
+    background-color: rgba(174, 28, 154, 0.08);
+    border-bottom: 1px solid var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14rem;
+    font-size: 12px;
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+}
+
+#header span {
+    color: var(--mainColor);
+}
+
+#mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15rem;
+
+
+}
+
+#mainHeader #logoSection img {
+    width: 130px;
+}
+
+#itemSection {
+    display: flex;
+    flex-direction: row;
+    /* gap: 15px; */
+    color: rgb(75, 75, 75);
+
+}
+
+
+
+
+
+
+#mainHeader #magnifyingGlass {
+    background-color: var(--secondColor);
+    border-radius: 50%;
+    padding: 15px;
+    color: black;
+}
+
+#mainHeader #compaire {
+    /* background-color: var(--secondColor); */
+    /* border-radius: 50%; */
+    padding: 15px;
+    /* color: black; */
+}
+
+#mainHeader #heart {
+    padding: 15px;
+}
+
+#mainHeader #cart {
+    padding: 15px;
+}
+
+#mainHeader #user {
+    padding: 15px 0;
+}
+
+
+
+
+#navBar {
+    width: 100%;
+    height: 70px;
+    background-color: var(--mainColor);
+    color: white;
+    padding: 5px 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#navBar #bars {
+    padding: 13px;
+    background-color: rgb(187, 186, 186);
+    border-radius: 50%;
+    opacity: 0.7;
+    font-weight: 900;
+}
+
+#navBar #leftNav {
+    display: flex;
+
+}
+
+
+#navBar #categories {
+    padding: 15px;
+}
+
+
+#navBar #rightNav a {
+    color: white;
+
+}
+
+#navBar #rightNav ul {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+}
+
+#navBar #rightNav ul li {
+    padding: 7px 0px;
+
+}
+
+
+
+#navBar #rightNav button {
+    background-color: var(--secondColor);
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+#navBar #rightNav button a {
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* --------------------heroSection---------------------- */
+
+
+
+#heroSection {
+    width: 100%;
+    min-height: 90vh;
+    background-color: rgb(232, 251, 245);
+    display: flex;
+
+    padding: 0 10rem;
+    justify-content: space-between;
+
+}
+
+#heroSection #heroText {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    margin-top: 8rem;
+    line-height: 70px;
+}
+
+#heroText button {
+    margin-top: 25px;
+    width: 25%;
+    padding: 15px 0px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--mainColor);
+    color: white;
+    box-shadow: 0 0 5px 0 var(--mainColor);
+    cursor: pointer;
+}
+
+#heroText span {
+    color: var(--mainColor);
+    font-size: 2.5rem;
+}
+
+#heroSection #heroImage {
+    width: 600px;
+    border-radius: 40%;
+    height: 500px;
+    background-image: url(./assets/banner1.png);
+    margin-top: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+/* --------------------cardSection---------------------- */
+
+#cardSection {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#cardfirstSection {
+    display: flex;
+    padding: 2rem 15rem;
+    gap: 40px;
+}
+
+#cardSection #firstCard {
+    width: 500px;
+    height: 450px;
+    background-image: url(./assets/banner2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px 0 rgb(222, 222, 222);
+
+}
+
+
+
+#cardSection #secondCard {
+    width: 500px;
+    height: 450px;
+    background-image: url(./assets/banner3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px 0 rgb(222, 222, 222);
+
+}
+
+#cardfirstSection p {
+    padding: 10px;
+}
+
+#cardfirstSection h2 {
+    padding-top: 280px;
+    margin: 20px;
+
+
+}
+
+#cardfirstSection button {
+    padding: 5px 10px;
+    margin: 20px;
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#cardsecondSection {
+    padding: 0 15rem;
+}
+
+
+#cardsecondSection #ourCategories {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cardsecondSection #ourCategoriesItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+
+}
+
+
+.items {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(174, 28, 154, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#cardthirdSection {
+    padding: 0 15rem;
+}
+
+
+#cardthirdSection #ourProducts {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cardthirdSection #productItem {
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    margin: 0 60px;
+    align-items: center;
+
+
+}
+
+.product {
+    padding: 20px 0;
+    width: 180px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 gray;
+    text-align: center;
+}
+
+
+
+
+
+
+/* -----------------New ARRIVAL Section------------------ */
+
+
+
+#arrivalSection {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(174, 28, 154, 0.08);
+    padding: 1rem 15rem;
+}
+
+#arrivalfirstSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#arrivalsecondSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.arrivalItems {
+
+    width: 250px;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 3px;
+
+}
+
+.arrivalItems img {
+    width: 200px;
+}
+
+
+
+
+
+/* -------------------Running Sale------------------ */
+
+
+#runningSale {
+    width: 100%;
+    min-height: 70vh;
+    background: linear-gradient(90deg, #FBD7E9 0%, #FFD7AB 100%);
+    padding: 2rem 15rem;
+}
+
+#sale {
+    display: flex;
+    justify-content: space-between;
+}
+
+#runningsalesecondSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.runningsaleItem {
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+
+}
+
+.runningsaleItem img {
+    width: 200px;
+}
+
+
+
+
+/* ---------------------top selling------------------- */
+
+
+
+
+#topselling {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F8F8;
+    padding: 2rem 15rem;
+}
+
+#topsell {
+    display: flex;
+    justify-content: space-between;
+}
+
+#topsellItems {
+    width: 330px;
+    height: 250px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+/* -----------------------week sell---------------------- */
+
+#weeksell {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F9EDF7;
+    padding: 2rem 15rem;
+}
+
+
+
+
+
+/* ------------------------flash Sale--------------------------- */
+
+
+
+#flashSale {
+    padding-top: 3rem;
+}
+
+
+#option {
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #AE1C9A;
+    margin: 30px 0;
+    position: relative;
+    margin-bottom: -80px;
+    z-index: 1;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.optionItem {
+    cursor: pointer;
+}
+
+
+
+/* ------------------------Footer--------------------------- */
+
+
+#footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: white;
+    padding: 0 15rem;
+    padding-top: 4rem;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#footer div ul li {
+    padding: 10px 0;
+}
+
+#footer ul {
+    gap: 20px;
+}
+
+#footer img {
+    padding-bottom: 30px;
+}
+
+#footer a {
+    color: white;
+    padding: 20px;
+
+
+}
